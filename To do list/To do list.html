@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TO DO LIST</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="jquery-3.3.1.min.js"></script>
+<style>
+body{
+	text-align: center;
+	background: #04A1BF;
+	font-family: 'Open Sans', sans-serif;
+}
+h1{
+	font-size: 40px;
+	color: white;
+	font-weight: 880;
+}
+#first{
+	 color: #FFCD5D;
+	font-weight: 600;
+}
+#second{
+	font-weight: 600;
+	color: #51DF70;
+}
+#third{
+    font-weight: 600;
+    color: #025F70;
+}
+#userInput{
+	min-width:65%;
+	padding:5px;
+}
+button{
+	font-size: 24px;
+}
+#enter{
+	padding:5px 15px;
+	color:#04A1BF;
+	background-color: #025F70;
+	border-radius: 5px;
+}
+#enter:hover{
+	background-color: #02798F;
+	color: #FFCD5D;
+}
+ul{
+	text-align: left;
+	margin-top:20px;
+}
+li{
+	color:white;
+	list-style-type: none;
+	text-transform: capitalize;
+	border:2px solid #025f70;
+	background-color: #4EB9CD; 
+	font-weight:600;
+
+}
+li:hover {
+	background: #76CFE0;
+}
+.delete{
+	display: none;
+}
+.done {
+	background: #51DF70 !important;
+	color: #00891E;
+}
+</style>
+</head>
+<body>
+<div class="container text-center">
+<h1>WORK TO-DOS</h1>
+<p id="first">Enter text into the input field to add items to your list.</p>
+<p id="second"> Click the item to mark it as complete.</p>
+<p id="third">Click the "X" to remove the item from your list.</p>
+<form>
+<input type="text" name="item name" placeholder="New item..." id="userInput" maxlength="100">
+<button id="enter" type="btn"><i class="fa fa-pencil"></i></button>
+</form>
+
+<div class="row">
+<div class="col-lg-12">
+<ul>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="to-do-list.js"></script>
+
+</body>
+</html>
